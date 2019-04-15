@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="userList">
+      <h2>Users</h2>
+      <ul class="list-unstyled"> 
+        <a (click)="username(user)"  *ngFor='let user of Users'><li>
+          {{user.name}}
+        </li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+

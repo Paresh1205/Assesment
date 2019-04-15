@@ -1,0 +1,25 @@
+.userList{
+    margin: 50px 0px;
+}
+.userList h2{
+    color: deepskyblue;
+}
+.userList ul{
+    border: 1px solid lightgrey;
+}
+.userList ul li{
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 25px;
+}
+.userList ul li:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+a:hover, a:focus {
+    color: black;
+    text-decoration: none;
+}
+a {
+    color: forestgreen;
+    font-weight: bold;
+}

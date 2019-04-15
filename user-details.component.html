@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="userDetails">
+    <h2>User Detail : <span>{{user.name}}</span></h2>
+    <form #userform = "ngForm" (ngSubmit)= "submit(userform)">
+
+      <div class="row">
+        
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)] = "user.name"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="username">User Name</label>
+              <input type="text" class="form-control" id="username" name="username" [(ngModel)] = "user.username"  required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" name="email" [(ngModel)] = "user.email"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" [(ngModel)] = "user.phone"  required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12"><h3>Address</h3></div>
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" class="form-control" id="street" name="street" [(ngModel)] = "user.address.street"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="suite">Suite</label>
+              <input type="text" class="form-control" id="suite" name="suite" [(ngModel)] = "user.address.suite"  required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" name="city" [(ngModel)] = "user.address.city"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" name="zip" [(ngModel)] = "user.address.zipcode"  required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12"><h3>Company</h3></div>
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="cname">Company Name</label>
+              <input type="text" class="form-control" id="cname" name="cname" [(ngModel)] = "user.company.name"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="catchPhrase">Phase</label>
+              <input type="text" class="form-control" id="catchPhrase" name="catchPhrase" [(ngModel)] = "user.company.catchPhrase"  required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="bs">BS</label>
+              <input type="text" class="form-control" id="bs" name="bs" [(ngModel)] = "user.company.bs"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" name="zip" [(ngModel)] = "user.address.zipcode"  required>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-12 text-right bt">
+          <button type="button" (click)="confirm()" class="btn btn-danger">Back</button>&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>

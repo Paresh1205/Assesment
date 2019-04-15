@@ -1,0 +1,21 @@
+.userDetails{
+    margin: 50px 0px;
+}
+.userDetails h2{
+    color: deepskyblue;
+}
+.userDetails h2 span{
+    color: mediumseagreen;
+}
+.userDetails row h3{
+    padding: 5px 15px;
+}
+.userDetails h2 , .userDetails h3{
+        margin-left: 15px;
+}
+.userDetails label{
+    color: #6f6f6f;
+}
+.userDetails .bt{
+    padding-right: 30px;
+}
